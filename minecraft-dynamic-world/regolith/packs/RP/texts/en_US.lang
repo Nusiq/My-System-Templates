@@ -1,0 +1,2 @@
+pack.name=`eval:project_name`
+pack.description=By `eval:author_name`

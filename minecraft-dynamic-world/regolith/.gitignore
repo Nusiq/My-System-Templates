@@ -1,0 +1,9 @@
+build
+.regolith
+script_debug
+node_modules
+system_template_log.json
+worlds/*/world_icon.jpeg
+**/.DS_Store
+**.blend1
+**.xml

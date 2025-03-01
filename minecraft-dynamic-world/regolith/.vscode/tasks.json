@@ -1,0 +1,21 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build For Debugging",
+			"command": "regolith run debug",
+			"type": "shell",
+			"options": {
+				"shell": {
+					"executable": "cmd.exe",
+					"args": ["/d", "/c"]
+				}
+			},
+			"problemMatcher": ["$tsc"],
+			"presentation": {
+				"reveal": "always"
+			},
+			"group": "test"
+		}
+	]
+}
