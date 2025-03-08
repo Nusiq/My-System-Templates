@@ -1,4 +1,5 @@
 build
+releases
 .regolith
 debug/script
 node_modules
