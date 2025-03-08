@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "debug"
+		},
+		{
+			"path": "local_modules"
+		}
+	],
+	"settings": {
+		"workbench.colorTheme": "Tomorrow Night Blue"
+	}
+}

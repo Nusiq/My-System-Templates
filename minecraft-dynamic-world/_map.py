@@ -20,17 +20,26 @@
         "target": "./",
         "json_template": True
     },
-    # LOCAL REGOLITH FILTERS
-    {
-        "source": "regolith/local_filters/prepare_debug.py",
-        "target": "./local_filters/"
-    },
     # REGOLITH
     {
         "source": "regolith/config.json",
         "target": "./",
         "json_template": True
     },
+    # WORKSPACES
+    {
+        "source": "regolith/main.code-workspace",
+        "target": f"{project_name}.code-workspace",
+    },
+    {
+        "source": "regolith/debug.code-workspace",
+        "target": f"{project_name} Debug.code-workspace",
+    },
+    # REGOLITH -> DEBUG
+    *[{
+        "source": p.as_posix(),
+        "target": p.relative_to("regolith").as_posix(),
+    } for p in Path("regolith/debug/.vscode/").rglob("*") if p.is_file()],
     # REGOLITH -> FILTERS DATA
     {
         "source": "regolith/filters_data/scope.json",

@@ -3,7 +3,7 @@
 	"tasks": [
 		{
 			"label": "Build For Debugging",
-			"command": "regolith run debug",
+			"command": "call .vscode/prepare_debug.bat",
 			"type": "shell",
 			"options": {
 				"shell": {

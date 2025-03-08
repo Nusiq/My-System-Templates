@@ -7,8 +7,9 @@
 			"name": "Debug with Minecraft",
 			"mode": "listen",
 			"preLaunchTask": "Build For Debugging",
-			"targetModuleUuid": "`script_module_uuid`", // The UUID of the script module
-			"localRoot": "${workspaceFolder}/script_debug",
+			"targetModuleUuid": "653126c0-89a0-4fc4-9e08-c84aada2c604",
+			"localRoot": "${workspaceFolder}/script/",
+			"sourceMapRoot": "${workspaceFolder}/script/",
 			"port": 19144
 		}
 	]

@@ -1,6 +1,6 @@
 build
 .regolith
-script_debug
+debug/script
 node_modules
 system_template_log.json
 worlds/*/world_icon.jpeg
