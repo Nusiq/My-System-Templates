@@ -7,8 +7,9 @@ Project implements namespaceing based on System Template global replacements fea
 
 Regolith configuration contains multiple profiles:
 - `default` - for the regular `regolith install` command.
-- `debug` - for running with `F5` in VS Code to debug scripting. In addition to everything that `default` does it copies the files into `script_debug` folder and creates their source maps.
 - `publish` - creates a `releases/release.mctemplate` file.
 
 The `_start` and `_end` profiles are shared between all profiles and shouldn't be ran directly.
 
+
+The code-workspace file that ends with "debug" in its name is for debugging purposes with Minecraft Debugger VSCode extension. After compiling the project with regolith, you should be able to use that workspace to debug your code by pressing F5.
