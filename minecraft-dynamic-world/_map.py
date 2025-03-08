@@ -39,7 +39,12 @@
     *[{
         "source": p.as_posix(),
         "target": p.relative_to("regolith").as_posix(),
-    } for p in Path("regolith/debug/.vscode/").rglob("*") if p.is_file()],
+        "json_template": True
+    } for p in Path("regolith/debug/.vscode/").rglob("*.json") if p.is_file()],
+    {
+        "source": "regolith/debug/.vscode/prepare_debug.bat",
+        "target": "debug/.vscode/prepare_debug.bat",
+    },
     # REGOLITH -> FILTERS DATA
     {
         "source": "regolith/filters_data/scope.json",
