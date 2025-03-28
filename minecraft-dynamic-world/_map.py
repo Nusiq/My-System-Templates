@@ -1,4 +1,9 @@
 [
+    # README
+    {
+        "source": "regolith/README.md",
+        "target": "README.md"
+    },
     # GIT & PRETTIER
     {
         "source": "regolith/.gitignore",
